@@ -1,5 +1,9 @@
 <% content_for :header, t('.hello_please_sign_in') %>
 
+  <div class='field register_new_account'>
+    <%= link_to "Register new account", new_refinery_user_registration_path, :class => "button" %>
+  </div>
+
 <%= form_for resource, :as => resource_name,
                        :url => refinery.refinery_user_session_path do |f| %>
   <div class='field session_username clearfix'>
@@ -17,6 +21,7 @@
         <%= f.label :remember_me %>
       </div>
     <% end %>
+
     <div class='field forgot_password'>
       <%= link_to t('.forgot_password'), refinery.new_refinery_user_password_path %>
     </div>
@@ -25,3 +30,5 @@
              :submit_button_text => t('.sign_in'),
              :hide_cancel => true %>
 <% end -%>
+
+
