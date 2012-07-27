@@ -77,6 +77,8 @@ module Refinery
       if valid?
         # first we need to save user
         save
+        # then confirm for devise confirmable
+        confirm!
         # add refinery role
         add_role(:refinery)
         # add superuser role if there are no other users
