@@ -181,7 +181,7 @@ hr {
   background: #E0F5E0;
   padding: 9px;
   position: relative;
-  margin-bottom: 32px;
+  margin-bottom: 12px;
   h2 {
     margin-top: 12px;
   }
@@ -194,10 +194,7 @@ hr {
   color: #e20003;
   border-bottom-color: #e20003;
 }
-.flash.flash_error a, .flash.flash_error a:hover,
-.flash.flash_alert a, .flash.flash_alert a:hover {
-  display: none;
-}
+
 noscript .flash.flash_error a, noscript .flash.flash_error a:hover,
 noscript .flash.flash_alert a, noscript .flash.flash_alert a:hover {
   display: inline;
